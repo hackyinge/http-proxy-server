@@ -1,0 +1,8 @@
+services:
+  leproxy:
+    build: .
+    ports:
+      - "50000:50000"
+    restart: unless-stopped
+    # 启用用户名密码认证
+    command: [ "Admin:Admin123456.,.@0.0.0.0:50000" ]

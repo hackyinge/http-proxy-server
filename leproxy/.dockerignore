@@ -1,0 +1,42 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+.github
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+DOCKER_DEPLOY.md
+
+# Tests
+tests
+phpunit.xml.dist
+
+# Development files
+.editorconfig
+.php_cs
+.php_cs.cache
+compile.php
+composer.json
+composer.lock
+
+# Source code (使用预编译文件,不需要源码)
+src
+leproxy.php
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files
+docker-compose.yml
+.dockerignore

@@ -1,0 +1,40 @@
+{
+    "name": "leproxy/leproxy",
+    "type": "project",
+    "description": "LeProxy is the HTTP/SOCKS proxy server for everybody!",
+    "keywords": ["LeProxy", "HTTP proxy", "SOCKS proxy", "HTTPS proxy", "proxy server", "async", "reactphp"],
+    "homepage": "http://leproxy.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Lück",
+            "email": "christian@lueck.tv"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "clue/commander": "^1.3",
+        "clue/connection-manager-extra": "^1.1",
+        "clue/http-proxy-react": "^1.4",
+        "clue/socks-react": "^1.0",
+        "react/http": "^0.8.3",
+        "react/http-client": "^0.5.9",
+        "react/socket": "^1.1"
+    },
+    "require-dev": {
+        "clue/block-react": "^1.3",
+        "phpunit/phpunit": "^4.8",
+        "react/promise-stream": "^1.0 || ^0.1.1"
+    },
+    "bin": [
+        "leproxy.php"
+    ],
+    "config": {
+        "platform": {
+            "php": "5.4"
+        }
+    },
+    "autoload": {
+        "psr-4": { "LeProxy\\LeProxy\\": "src/"}
+    }
+}
